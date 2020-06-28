@@ -7,7 +7,12 @@
     <mat-list-item>Nota IMDb: &nbsp; <a [href]="filme.urlIMDb" target="_blank">{{filme.nota}}</a></mat-list-item>
     <img mat-card-image [src]="filme.urlFoto || semFoto">
 </mat-list>
-
+<mat-card>
+    <mat-card-actions>
+        <button color="accent" mat-raised-button>Editar</button>
+        <button color="warn" mat-raised-button (click)="excluir()">Excluir</button>
+    </mat-card-actions>
+</mat-card>
 <ng-template #semregistro>
     <h1 class="full-width main-div">Nenhum registro foi encontrado.</h1>
   </ng-template>

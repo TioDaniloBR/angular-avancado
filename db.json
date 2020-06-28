@@ -129,66 +129,6 @@
       "urlIMDb": "",
       "genero": "Comédia",
       "id": 13
-    },
-    {
-      "titulo": "sadf",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-09T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção cientifica",
-      "id": 14
-    },
-    {
-      "titulo": "sdfhgsd",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-09T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção cientifica",
-      "id": 15
-    },
-    {
-      "titulo": "sdfhgs",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-10T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Romance",
-      "id": 16
-    },
-    {
-      "titulo": "dfgfg",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-19T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Ficção cientifica",
-      "id": 17
-    },
-    {
-      "titulo": "sadgfasd",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-18T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Drama",
-      "id": 18
-    },
-    {
-      "titulo": "fghgfjkgh",
-      "urlFoto": "",
-      "dtLancamento": "2020-06-18T03:00:00.000Z",
-      "descricao": "",
-      "nota": 0,
-      "urlIMDb": "",
-      "genero": "Terror",
-      "id": 19
     }
   ]
 }
