@@ -1,12 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+<<<<<<< HEAD
 import { MatDialog } from '@angular/material/dialog';
 import { Router, ActivatedRoute } from '@angular/router';
+=======
+import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+
+>>>>>>> novaBranch
 import { ValidarCamposService } from 'src/app/shared/components/campos/validar-campos.service';
 import { Filme } from 'src/app/shared/models/filme';
 import { FilmesService } from 'src/app/core/filmes.service';
 import { AlertaComponent } from 'src/app/shared/components/alerta/alerta.component';
 import { Alerta } from 'src/app/shared/models/alerta';
+<<<<<<< HEAD
+=======
+
+>>>>>>> novaBranch
 
 @Component({
   selector: 'dio-cadastro-filmes',
@@ -15,6 +25,7 @@ import { Alerta } from 'src/app/shared/models/alerta';
 })
 export class CadastroFilmesComponent implements OnInit {
 
+<<<<<<< HEAD
   id: number;
   cadastro: FormGroup;
   generos: Array<string>;
@@ -116,9 +127,36 @@ export class CadastroFilmesComponent implements OnInit {
         } as Alerta
       };
       this.dialog.open(AlertaComponent, config);
+=======
+  cadastro: FormGroup;
+  generos: Array<string>;
+
+  constructor(public validacao: ValidarCamposService,
+              public dialog: MatDialog,
+              private fb: FormBuilder,
+              private filmeService: FilmesService,
+              private router: Router
+             ) { }
+
+  get f() {
+    return this.cadastro.controls;
+  }
+
+  ngOnInit(): void {
+
+    this.cadastro = this.fb.group({
+      titulo: ['',[Validators.required, Validators.minLength(2),Validators.maxLength(256)]],
+      urlFoto: ['', [Validators.minLength(10)]],
+      dtLancamento: ['', [Validators.required]],
+      descricao: [''],
+      nota: [0,[Validators.required, Validators.min(0), Validators.max(10)]],
+      urlIMDb: ['', [Validators.minLength(10)]],
+      genero: ['', [Validators.required]]
+>>>>>>> novaBranch
     });
   }
 
+<<<<<<< HEAD
   private editar(filme: Filme): void {
     this.filmeService.editar(filme).subscribe(() => {
       const config = {
@@ -129,14 +167,59 @@ export class CadastroFilmesComponent implements OnInit {
       };
       const dialogRef = this.dialog.open(AlertaComponent, config);
       dialogRef.afterClosed().subscribe(() => this.router.navigateByUrl('filmes'));
+=======
+    this.generos = ['Ação', 'Romance', 'Aventura', 'Terror', 'Ficção cientifica', 'Comédia', 'Drama'];
+
+  }
+
+  submit():void{
+    this.cadastro.markAllAsTouched();
+    if(this.cadastro.invalid) {
+      return ;
+    }
+    const filme = this.cadastro.getRawValue() as Filme;
+    this.salvar(filme);
+  }
+
+  reiniciarForm():void {
+    this.cadastro.reset();
+  }
+
+  private salvar(filme: Filme): void{
+    this.filmeService.salvar(filme).subscribe( ()=> {
+      const config = {
+        data: {
+          btnSucesso: "Ir para listagem",
+          btnCancelar: "Cadastrar novo filme",
+          corBtnSucesso: "secondary",
+          corBtnCancelar: "primary",
+          possuirBtnFechar: true
+        } as Alerta
+      };
+      const dialogRef = this.dialog.open(AlertaComponent, config)
+      dialogRef.afterClosed().subscribe( (opcao: boolean) => {
+        if(opcao) {
+          this.router.navigateByUrl('filmes');
+        }else{
+          this.reiniciarForm();
+        }
+      });
+>>>>>>> novaBranch
     },
     () => {
       const config = {
         data: {
+<<<<<<< HEAD
           titulo: 'Erro ao editar o registro!',
           descricao: 'Não conseguimos editar seu registro, favor tentar novamente mais tarde',
           corBtnSucesso: 'warn',
           btnSucesso: 'Fechar'
+=======
+          titulo: "Erro ao salvar registro.",
+          btnSucesso: "Fechar",
+          descricao: "Não foi possivel salvar o registro. Tente novamente mais tarde.",
+          corBtnSucesso: "warn"
+>>>>>>> novaBranch
         } as Alerta
       };
       this.dialog.open(AlertaComponent, config);

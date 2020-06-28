@@ -5,7 +5,11 @@ import { ValidarCamposService } from '../validar-campos.service';
 @Component({
   selector: 'dio-input-text',
   templateUrl: './input-text.component.html',
+<<<<<<< HEAD
   styleUrls: ['./input-text.component.css']
+=======
+  styleUrls: ['./input-text.component.scss']
+>>>>>>> novaBranch
 })
 export class InputTextComponent {
 

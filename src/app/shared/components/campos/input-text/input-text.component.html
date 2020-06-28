@@ -1,5 +1,6 @@
 <div [formGroup]="formGroup">
   <mat-form-field class="full-width">
+<<<<<<< HEAD
     <input  matInput
             [placeholder]="titulo"
             [name]="controlName"
@@ -13,3 +14,18 @@
     </mat-error>
   </mat-form-field>
 </div>
+=======
+    <input matInput
+      [placeholder]="titulo"
+      [name]="controlName"
+      [formControlName]="controlName">
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">Campo Obrigatório.</mat-error>
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'minlength')">
+      Deve possuir no mínimo {{ validacao.lengthValidar(formControl, 'minlength') }} caracteres.
+    </mat-error>
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'maxlength')">
+      Deve possuir no máximo {{ validacao.lengthValidar(formControl, 'maxlength') }} caracteres.
+    </mat-error>
+  </mat-form-field>
+</div>
+>>>>>>> novaBranch

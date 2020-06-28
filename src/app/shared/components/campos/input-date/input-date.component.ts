@@ -5,7 +5,11 @@ import { ValidarCamposService } from '../validar-campos.service';
 @Component({
   selector: 'dio-input-date',
   templateUrl: './input-date.component.html',
+<<<<<<< HEAD
   styleUrls: ['./input-date.component.css']
+=======
+  styleUrls: ['./input-date.component.scss']
+>>>>>>> novaBranch
 })
 export class InputDateComponent {
 
@@ -18,5 +22,8 @@ export class InputDateComponent {
   get formControl(): AbstractControl {
     return this.formGroup.controls[this.controlName];
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> novaBranch
 }

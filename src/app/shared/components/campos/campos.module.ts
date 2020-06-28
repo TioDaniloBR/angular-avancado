@@ -22,7 +22,11 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     ReactiveFormsModule,
     FormsModule
   ],
+<<<<<<< HEAD
   exports: [
+=======
+  exports:[
+>>>>>>> novaBranch
     InputTextComponent,
     InputNumberComponent,
     InputDateComponent,

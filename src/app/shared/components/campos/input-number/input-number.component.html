@@ -1,5 +1,6 @@
 <div [formGroup]="formGroup">
   <mat-form-field class="full-width">
+<<<<<<< HEAD
     <input  matInput
             type="number"
             [min]="minimo"
@@ -17,3 +18,24 @@
     </mat-error>
   </mat-form-field>
 </div>
+=======
+    <input matInput
+      type="number"
+      [min]="minimo"
+      [max]="maximo"
+      [step]="step"
+      [placeholder]="titulo" 
+      [name]="controlName" 
+      [formControlName]="controlName">
+      <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'required')">
+        Campo Obrigatório.
+      </mat-error>
+      <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'min')">
+        Valor mínimo {{ validacao.lengthValidar(formControl, 'min') }}
+      </mat-error>
+    <mat-error *ngIf="validacao.hasErrorValidar(formControl, 'max')">
+      Valor máximo {{ validacao.lengthValidar(formControl, 'max') }}
+    </mat-error>
+  </mat-form-field>
+</div>
+>>>>>>> novaBranch

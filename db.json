@@ -109,6 +109,89 @@
       "urlIMDb": "https://www.imdb.com/title/tt2527338/?ref_=vi_md_ti",
       "genero": "Aventura",
       "id": 11
+<<<<<<< HEAD
+=======
+    },
+    {
+      "titulo": "Django Livre",
+      "urlFoto": "https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+      "dtLancamento": "2013-01-18T02:00:00.000Z",
+      "descricao": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+      "nota": 8.4,
+      "urlIMDb": "https://www.imdb.com/title/tt1853728/?ref_=fn_al_tt_1",
+      "genero": "Drama",
+      "id": 12
+    },
+    {
+      "titulo": "dsaf",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-09T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Comédia",
+      "id": 13
+    },
+    {
+      "titulo": "sadf",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-09T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Ficção cientifica",
+      "id": 14
+    },
+    {
+      "titulo": "sdfhgsd",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-09T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Ficção cientifica",
+      "id": 15
+    },
+    {
+      "titulo": "sdfhgs",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-10T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Romance",
+      "id": 16
+    },
+    {
+      "titulo": "dfgfg",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-19T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Ficção cientifica",
+      "id": 17
+    },
+    {
+      "titulo": "sadgfasd",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-18T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Drama",
+      "id": 18
+    },
+    {
+      "titulo": "fghgfjkgh",
+      "urlFoto": "",
+      "dtLancamento": "2020-06-18T03:00:00.000Z",
+      "descricao": "",
+      "nota": 0,
+      "urlIMDb": "",
+      "genero": "Terror",
+      "id": 19
+>>>>>>> novaBranch
     }
   ]
 }

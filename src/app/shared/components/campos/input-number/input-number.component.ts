@@ -5,10 +5,17 @@ import { ValidarCamposService } from '../validar-campos.service';
 @Component({
   selector: 'dio-input-number',
   templateUrl: './input-number.component.html',
+<<<<<<< HEAD
   styleUrls: ['./input-number.component.css']
 })
 export class InputNumberComponent {
 
+=======
+  styleUrls: ['./input-number.component.scss']
+})
+export class InputNumberComponent {
+ 
+>>>>>>> novaBranch
   @Input() titulo: string;
   @Input() formGroup: FormGroup;
   @Input() controlName: string;
@@ -21,5 +28,8 @@ export class InputNumberComponent {
   get formControl(): AbstractControl {
     return this.formGroup.controls[this.controlName];
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> novaBranch
 }

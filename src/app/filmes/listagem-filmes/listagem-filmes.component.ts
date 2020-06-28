@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { debounceTime } from 'rxjs/operators';
 import { FilmesService } from 'src/app/core/filmes.service';
 import { Filme } from 'src/app/shared/models/filme';
 import { ConfigPrams } from 'src/app/shared/models/config-prams';
+=======
+import { FilmesService } from 'src/app/core/filmes.service';
+import { Filme } from 'src/app/shared/models/filme';
+>>>>>>> novaBranch
 
 @Component({
   selector: 'dio-listagem-filmes',
@@ -14,6 +19,7 @@ import { ConfigPrams } from 'src/app/shared/models/config-prams';
 export class ListagemFilmesComponent implements OnInit {
   readonly semFoto = 'https://www.termoparts.com.br/wp-content/uploads/2017/10/no-image.jpg';
 
+<<<<<<< HEAD
   config: ConfigPrams = {
     pagina: 0,
     limite: 4
@@ -68,4 +74,28 @@ export class ListagemFilmesComponent implements OnInit {
     this.filmes = [];
     this.listarFilmes();
   }
+=======
+
+  pagina = 0;
+  readonly qtdPagina = 4;
+  filmes: Filme[] = [];
+
+  constructor(private filmeService: FilmesService) { }
+
+  ngOnInit(): void {
+    this.listarFilmes();
+  }
+
+  onScroll(): void{
+    this.listarFilmes();
+  }
+
+  private listarFilmes(): void{
+    this.pagina++;
+    this.filmeService.listar(this.pagina, this.qtdPagina)
+    .subscribe( (filmes: Filme[]) => this.filmes.push(...filmes));
+  }
+
+
+>>>>>>> novaBranch
 }

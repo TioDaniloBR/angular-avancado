@@ -1,4 +1,5 @@
 <mat-toolbar class="app-title">Filmes Cadastrados</mat-toolbar>
+<<<<<<< HEAD
 
 <mat-card class="float-left margin10 filtro-listagem" >
   <form autocomplete="off" novalidate [formGroup]="filtrosListagem">
@@ -40,6 +41,24 @@
     </mat-card-content>
     <mat-card-actions>
       <button color="accent" mat-raised-button (click)="abrir(filme.id)">ABRIR</button>
+=======
+<div class="home-content" infiniteScroll (scrolled)="onScroll()">
+
+  <mat-card class="home-card" *ngFor="let filme of filmes">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ filme.titulo }}</mat-card-title>
+      <mat-card-subtitle>{{ filme.genero }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="filme.urlFoto">
+    <mat-card-content>
+      <p>
+        {{ filme.descricao }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button color="accent" mat-raised-button>Abrir</button>
+>>>>>>> novaBranch
     </mat-card-actions>
   </mat-card>
 </div>
